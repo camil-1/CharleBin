@@ -72,32 +72,6 @@ h3.title {
 	bottom: 8px;
 }
 
-#aboutbox {
-	color: #94a3b4;
-	padding: 4px 8px 4px 16px;
-	position: relative;
-	top: 10px;
-	border-left: 2px solid #94a3b4;
-	float: right;
-	width: 60%;
-}
-
-#aboutbox a { color: #94a3b4; }
-
-#message, #cleartext, #prettymessage, #attachment, .replymessage {
-	clear: both;
-	color: #000;
-	background-color: #fff;
-	font-size: 9pt;
-	border: 1px solid #28343F;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	width: 100%;
-}
-
 #message, .replymessage {
 	padding: 5px;
 	white-space: pre-wrap;

@@ -76,22 +76,6 @@ endif;
 	</head>
 	<body data-compression="<?php echo rawurlencode($COMPRESSION); ?>">
 		<header>
-			<div id="aboutbox">
-				<?php echo sprintf(
-                    I18n::_('%s is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted %sin the browser%s using 256 bits AES.',
-                        I18n::_($NAME),
-                        '%s', '%s'
-                    ),
-                    '<i>', '</i>'), ' ', $INFO;
-                ?>
-				<br />
-<?php
-if (strlen($NOTICE)):
-?>
-				<span class="blink">▶</span> <?php echo I18n::encode($NOTICE);
-endif;
-?>
-			</div>
 			<h1 class="title reloadlink"><?php echo I18n::_($NAME); ?></h1><br />
 			<h2 class="title"><?php echo I18n::_('Because ignorance is bliss'); ?></h2><br />
 			<h3 class="title"><?php echo $VERSION; ?></h3>
