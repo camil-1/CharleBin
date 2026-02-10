@@ -18,7 +18,16 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
+        working-directory: js
         run: npm install
 
+      - name: Start application
+        run: php -S localhost:8080 &
+
+      - name: Wait for server
+        run: sleep 5
+
       - name: Run Cypress tests
+        working-directory: js
         run: npx cypress run
+
